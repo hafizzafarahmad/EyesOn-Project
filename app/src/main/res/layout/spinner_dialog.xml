@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.isapanah.awesomespinner.AwesomeSpinner
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:id="@+id/language_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:spinnerHint="Select Language">
+
+    </com.isapanah.awesomespinner.AwesomeSpinner>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_below="@+id/language_spinner"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Translate to"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <com.isapanah.awesomespinner.AwesomeSpinner
+        android:layout_below="@+id/text"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:id="@+id/translate_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:spinnerHint="Select Language">
+
+    </com.isapanah.awesomespinner.AwesomeSpinner>
+
+</RelativeLayout>

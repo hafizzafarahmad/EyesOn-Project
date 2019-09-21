@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Polygot</string>
+
+    <!--firebase-->
+    <string name="auth_failed">Filed to Authenticate</string>
+    <string name="auth_success">Authentication Success</string>
+
+    <string-array name="native_arrays">
+        <item>af - Afrikaans</item>
+        <item>sq - Albanian</item>
+        <item>am - Amharic</item>
+        <item>am - Arabic</item>
+        <item>hy - Armenian</item>
+        <item>id - Bahasa Indonesia</item>
+        <item>ml - Bahasa Melayu</item>
+        <item>bn - Bengali</item>
+        <item>bg - Bulgarian</item>
+        <item>hr - Croatian</item>
+        <item>cs - Czech</item>
+        <item>da - Danish</item>
+        <item>nl - Dutch</item>
+        <item>en - English</item>
+        <item>et - Estonian</item>
+        <item>fi - Finnish</item>
+        <item>fr - French</item>
+        <item>ka - Georgian</item>
+        <item>de - German</item>
+        <item>el - Greek</item>
+        <item>hi - Hindi</item>
+        <item>hu - Hungarian</item>
+        <item>it - Italian</item>
+        <item>ja - Japanese</item>
+        <item>la - Latin</item>
+        <item>lv - Latvian</item>
+        <item>lt - Lithuanian</item>
+        <item>mk - Macedonian</item>
+        <item>mn - Mongolian</item>
+        <item>ne - Nepali</item>
+        <item>no - Norwegian</item>
+        <item>fa - Persian</item>
+        <item>pl - Polish</item>
+        <item>pt - Portuguese</item>
+        <item>pa - Punjabi</item>
+        <item>ro - Romanian</item>
+        <item>ru - Russian</item>
+        <item>es - Spanish</item>
+        <item>sv - Swedish</item>
+        <item>tl - Tagalog</item>
+        <item>th - Thai</item>
+        <item>tr - Turkish</item>
+        <item>uk - Ukrainian</item>
+        <item>ur - Urdu</item>
+        <item>uz - Uzbek</item>
+        <item>vi - Vietnamese</item>
+    </string-array>
+
+</resources>

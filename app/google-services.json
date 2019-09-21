@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "701990860499",
+    "firebase_url": "https://eyesonapp.firebaseio.com",
+    "project_id": "eyesonapp",
+    "storage_bucket": "eyesonapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:701990860499:android:1630b44485574aa1",
+        "android_client_info": {
+          "package_name": "com.princedev.eyesonapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "701990860499-kr6ih4jmtpc89h2q20gvof0uqpas2o02.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.princedev.eyesonapp",
+            "certificate_hash": "71ae2e84c3cb0142ec85bb6acf3b8399813f9468"
+          }
+        },
+        {
+          "client_id": "701990860499-93bmn7ipesv7m7u7rljo6m846q4r4in5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2KDcsMoQua9M7cGgUDWMmXISlZ4KnvsU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "701990860499-93bmn7ipesv7m7u7rljo6m846q4r4in5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

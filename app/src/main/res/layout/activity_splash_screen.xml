@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen"
+    android:id="@+id/splash_screen"
+    android:background="@drawable/bgsplash">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/polygot"
+        android:id="@+id/logo"/>
+
+    <com.agrawalsuneet.dotsloader.loaders.LazyLoader
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lazyloader_animDur="250"
+        app:lazyloader_dotsDist="10dp"
+        app:lazyloader_dotsRadius="8dp"
+        app:lazyloader_firstDelayDur="100"
+        app:lazyloader_firstDotColor="#FF2400"
+        app:lazyloader_interpolator="@android:anim/decelerate_interpolator"
+        app:lazyloader_secondDelayDur="200"
+        app:lazyloader_secondDotColor="#00FF00"
+        app:lazyloader_thirdDotColor="#0000A0" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Powered by Mahasiswa"
+            android:textSize="11sp"
+            android:textColor="#FFF8DC"
+            android:layout_marginRight="5dp"
+            android:id="@+id/powered"/>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@+id/powered"
+            android:src="@drawable/logo_bsi"/>
+
+    </RelativeLayout>
+
+
+
+
+    <!--<com.agrawalsuneet.dotsloader.loaders.AllianceLoader-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_below="@id/logo"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:alliance_animDuration="500"-->
+        <!--app:alliance_distanceMultiplier="3"-->
+        <!--app:alliance_dotsRadius="10dp"-->
+        <!--app:alliance_drawOnlyStroke="true"-->
+        <!--app:alliance_firstDotsColor="@android:color/holo_red_dark"-->
+        <!--app:alliance_secondDotsColor="@color/pdlg_color_blue"-->
+        <!--app:alliance_strokeWidth="5dp"-->
+        <!--app:alliance_thirdDotsColor="@color/pdlg_color_green" />-->
+
+
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/search_nationality"
+        android:icon="@drawable/ic_nationality"
+        android:title="Nationality" />
+
+    <item
+        android:id="@+id/search_native"
+        android:icon="@drawable/ic_nationality"
+        android:title="Find Native Speaker" />
+
+    <item
+        android:id="@+id/search_learn"
+        android:icon="@drawable/ic_nationality"
+        android:title="Find Who Learning ?" />
+
+    <item
+        android:id="@+id/search_by_input"
+        android:icon="@drawable/ic_nationality"
+        android:title="Search by Name" />
+
+</menu>

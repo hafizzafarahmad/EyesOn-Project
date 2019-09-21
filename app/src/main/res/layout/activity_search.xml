@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.princedev.eyesonapp.SearchActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relLayoutParent">
+
+        <!-- top toolbar -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relLayout1">
+
+            <include layout="@layout/app_bar_layout"
+                android:id="@+id/main_page_toolbar"/>
+
+            <EditText
+                android:id="@+id/search_input"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Search..."
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:paddingTop="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+            <com.isapanah.awesomespinner.AwesomeSpinner
+                android:id="@+id/search_nativeSpeaker"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                android:layout_marginTop="7dp"
+                app:spinnerHint="Find Native Speaker..."
+                android:visibility="gone" />
+
+            <com.isapanah.awesomespinner.AwesomeSpinner
+                android:id="@+id/search_learning"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="7dp"
+                android:textSize="20sp"
+                app:spinnerHint="Find Who Learning..."
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <!-- body -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relLayout2"
+            android:layout_marginTop="50dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/search_result_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"/>
+
+        </RelativeLayout>
+        
+        <io.github.yavski.fabspeeddial.FabSpeedDial
+            app:fabDrawable="@drawable/ic_search"
+            android:id="@+id/fab_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            app:fabGravity="bottom_end"
+            app:fabMenu="@menu/main_menu"
+            app:miniFabBackgroundTint="@color/white"
+            app:miniFabDrawableTint="?attr/colorPrimaryDark"
+            app:miniFabTitleTextColor="?attr/colorPrimaryDark"
+            android:layout_marginBottom="50dp">
+
+        </io.github.yavski.fabspeeddial.FabSpeedDial>
+
+        <!-- navbar -->
+
+
+    </FrameLayout>
+
+    <include layout="@layout/layout_bottom_navigation_view"/>
+
+
+
+</RelativeLayout>

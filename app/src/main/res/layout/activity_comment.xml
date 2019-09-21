@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.princedev.eyesonapp.CommentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relLayoutParent">
+
+        <include layout="@layout/app_bar_layout"
+            android:id="@+id/post_toolbar"/>
+
+        <ImageButton
+            android:id="@+id/backArrow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_backarrow"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:background="#00000000"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/backArrow"
+            android:background="#00000000"
+            android:layout_alignParentTop="true"
+            android:text="Comment"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/relLayoutParent"
+            android:background="@drawable/white_grey_border_bottom">
+
+            <ImageView
+                android:id="@+id/comment_post_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/profile"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/comment_caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/comment_post_image"
+                android:padding="10dp"
+                android:text="caption bla bla bla"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/comment_likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/comment_post_image"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="0 likes"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/comment_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:text="date"
+                android:textSize="13sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/relLayout1">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/comments_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_above="@id/bottomLayout"/>
+
+            <RelativeLayout
+                android:id="@+id/bottomLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp">
+
+                <EditText
+                    android:id="@+id/comment_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textMultiLine"
+                    android:hint="Write a Comment..."
+                    android:textSize="17sp"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="5dp"
+                    android:layout_toLeftOf="@+id/post_comment_button"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/rounded_edittext"
+                    android:layout_marginBottom="3dp"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/post_comment_button"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/ic_send_black"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="3dp"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+</RelativeLayout>
